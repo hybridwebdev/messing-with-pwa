@@ -1,0 +1,5 @@
+break-points()
+    for k, v in config.break-points
+        max-widths(v)
+        @media({v.media})
+            sizing(k)

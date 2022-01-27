@@ -1,0 +1,21 @@
+cols( prefix='')
+    .col-fill{prefix}
+        flex 1
+        -webkit-box-flex 1
+        -ms-flex 1
+    .col-grow{prefix}
+        width initial
+        -webkit-box-flex 1
+        -ms-flex 1 1 auto
+        flex 1 1 auto
+    .col-auto{prefix}
+        width auto
+    .col-shrink{prefix}
+        width auto
+        flex 0
+        -webkit-box-flex 0 
+        -ms-flex 0 
+    for num in ( 0..config.columns )
+        $percent = (100% / config.columns ) * num  
+        .col-{num}{prefix}
+            width $percent

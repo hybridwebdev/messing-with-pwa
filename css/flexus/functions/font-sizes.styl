@@ -1,0 +1,29 @@
+font-sizes(prefix='')
+    for key, val in config.fonts.sizes
+        define("$fs-" + key, val, true)
+        .fs-{key}{prefix}
+            font-size val
+
+font-weights()
+    for key, val in config.fonts.weights
+        define("$fw-" + key, val, true)
+        .fw-{key}
+            font-weight val
+
+font-families()
+    for key, val in config.fonts.families
+        define("$ff-" + key, val, true)
+        .ff-{key}
+            font-family val
+
+font-decorations()
+    for key, val in config.fonts.decorations
+        define("$fd-" + key, val, true)
+        .fd-{key}
+            text-decoration val
+
+font-styles()
+    for key, val in config.fonts.styles
+        define("$fst-" + key, val, true)
+        .fst-{key}
+            font-style val

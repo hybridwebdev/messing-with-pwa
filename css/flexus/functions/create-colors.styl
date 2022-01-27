@@ -1,0 +1,19 @@
+create-colors(colors)
+    for i, v in colors
+        .text-{i}
+            color v
+        .fill-{i}
+            background-color v
+        .bc-{i}
+            border-color v
+        .active-text-{i}
+            color v
+        .active-fill-{i}
+            background-color v
+
+create-skins()
+    skin = config['active-skin']
+    theme = config.skins[skin]
+    .pockets-skin&.{skin}
+        create-colors(theme) 
+        reset-elements()

@@ -1,0 +1,16 @@
+.pockets-slider {
+  position: relative;
+  overflow: hidden;
+}
+.pockets-slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-position: center;
+}
+.pockets-slider .arrow {
+  z-index: 1;
+  cursor: pointer;
+}

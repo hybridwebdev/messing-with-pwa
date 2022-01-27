@@ -1,0 +1,6 @@
+config = json('../config.json', { hash: false } )
+@import('../functions/*')
+reset-body()
+if config.use-resets 
+    resets()
+

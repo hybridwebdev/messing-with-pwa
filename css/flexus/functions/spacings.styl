@@ -1,0 +1,8 @@
+spacings(prefix='')
+    for num in (0..config.gutters.count)
+
+        $size = s('%s%s', (config.gutters.size * num), unquote(config.gutters.unit) )
+        $joined = s('%s%s', num, unquote(prefix) )
+        
+        paddings($size, $joined)
+        margins($size, $joined)

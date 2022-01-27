@@ -1,0 +1,9 @@
+height-maker(prefix='')
+    for key, v in config.heights
+        $joined_up = s('%s%s', v, unquote("vh") )
+        .vh-{v}{prefix}
+            height $joined_up
+        .min-vh-{v}{prefix}
+            height $joined_up
+        .max-vh-{v}{prefix}
+            height $joined_up

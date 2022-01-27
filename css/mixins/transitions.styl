@@ -1,0 +1,41 @@
+animator(class='slide', animation = 'slide-vertical')
+    $animations = {
+        slide-vertical: {
+            $prop: "transform",
+            $in: translate(0, -100%),
+            $out: translate(0, 100%)
+        },
+        slide-horizontal: {
+            $prop: "transform",
+            $in: translate(100%, 0),
+            $out: translate(-100%, 0)
+        },
+        fade: {
+            $prop: "opacity",
+            $in: 1,
+            $out: 0
+        }
+    }
+    animate( direction = '$in')
+        $ani = $animations[animation]
+        prop = $ani['$prop']
+        {prop} $ani[direction]
+             
+    {class}
+        &-leave-active
+        &-enter-active
+            transition 1s
+        &-enter
+            animate()
+        &-leave-to
+            animate("$out")
+        &-right
+            & {class}
+                &-enter
+                    animate("$out")
+                &-leave-to
+                    animate()
+
+animator( '.slide-horizontal', 'slide-horizontal' )
+animator( '.slide-vertical', 'slide-vertical' )
+animator( '.fade', 'fade' )

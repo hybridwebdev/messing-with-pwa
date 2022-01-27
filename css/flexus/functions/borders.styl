@@ -1,0 +1,53 @@
+
+border-styles(prefix='')
+    for k, num in config.borders.styles
+        .bs-{num}{prefix}
+            border-style num
+        .bs-t-{num}{prefix}
+        .bs-y-{num}{prefix}
+            border-style num
+        .bs-r-{num}{prefix}
+        .bs-x-{num}{prefix}
+            border-style num
+        .bs-b-{num}{prefix}
+        .bs-y-{num}{prefix}
+            border-style num
+        .bs-l-{num}{prefix}
+        .bs-x-{num}{prefix}
+            border-style num
+
+border-radius(prefix='')
+    for k, num in config.borders.radius
+        
+        .br-{k}{prefix}
+            border-radius num
+
+        .br-tl-{k}{prefix}
+            border-top-left-radius num
+        
+        .br-tr-{k}{prefix}
+            border-top-right-radius num
+        
+        .br-bl-{k}{prefix}
+            border-bottom-left-radius num
+        
+        .br-br-{k}{prefix}
+            border-bottom-right-radius num
+border-widths(prefix='')
+    for k, num in config.borders.widths
+    
+        .bw-{k}{prefix}
+            border-width num 
+
+        .bw-t-{k}{prefix}
+        .bw-y-{k}{prefix}
+            border-top-width num 
+        .bw-r-{k}{prefix}
+        .bw-x-{k}{prefix}
+            border-right-width num  
+        .bw-b-{k}{prefix}
+        .bw-y-{k}{prefix}
+            border-bottom-width num   
+        .bw-l-{k}{prefix}
+        .bw-x-{k}{prefix}
+            border-left-width num 

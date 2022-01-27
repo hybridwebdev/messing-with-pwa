@@ -1,0 +1,8 @@
+ { 
+       "webpack_chunk_name": "__pockets__",
+       "port": "8081",
+       "built": "/wp-content/plugins/pockets/assets/dist",
+       "localhost": "https://localhost:8081/",
+       "dev": "pockets-developer",
+       "load-css": true
+ }

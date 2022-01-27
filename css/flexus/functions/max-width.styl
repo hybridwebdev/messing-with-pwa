@@ -1,0 +1,16 @@
+max-widths(break)
+    $size = break.size
+    $size_up = $size + (config.gutters.size * config.gutters.max-width-gutter)
+    $joined_up = s('%s%s', $size_up, unquote("px") )
+    $joined = ($size)px
+    $guttered = s(
+        '%s%s', 
+        (config.gutters.size * config.gutters.max-width-gutter), 
+        unquote(config.gutters.unit) 
+    )
+    .mw-{break.size}
+        max-width $joined
+    .mw-{break.size}:not(.no-pad)
+        @media(max-width $joined_up)
+            padding-left $guttered
+            padding-right $guttered 

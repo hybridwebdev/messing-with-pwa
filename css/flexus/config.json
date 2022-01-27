@@ -1,0 +1,147 @@
+{
+    "borders": {
+        "widths": {
+            "1": "1px",
+            "2": "2px",
+            "3": "3px",
+            "4": "4px",
+            "5": "5px",
+            "6": "6px",
+            "7": "7px",
+            "8": "8px",
+            "9": "9px",
+            "10": "10px", 
+            "20": "20px", 
+            "30": "30px", 
+            "60": "60px"
+        },
+        "styles": [
+            "dotted",
+            "solid",
+            "double",
+            "dashed"
+        ],
+        "radius": {
+            "1": "1px", 
+            "2": "2px", 
+            "3": "3px", 
+            "4": "4px", 
+            "5": "5px", 
+            "6": "6px", 
+            "7": "7px", 
+            "8": "8px", 
+            "9": "9px", 
+            "10":"10px", 
+            "20": "20px", 
+            "30": "30px", 
+            "40": "40px",
+            "50": "50%",
+            "100": "100%"
+        }
+    },
+    "use-resets": false,
+    "columns": 12,
+    "gutters": {
+        "count": 10,
+        "size": 10,
+        "max-width-gutter": 2,
+        "unit": "px"
+    },
+    "heights": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95,
+        100
+    ],
+    "order_count": 5,
+    "active-skin": "skin-1",
+    "skins": {
+        "skin-1": {
+            "w1": "#fff",
+            "l1": "#E2E2E4",
+            "l2": "#9E8C54",
+            "a1": "#7A7095",
+            "d1": "#77796D",
+            "d2": "#18192A",
+            "b1": "#000",
+            "g1": "darken(green, 3)",
+            "r1": "darken(red, 10)" 
+        }
+    },
+    "fonts": {
+        "styles": {
+            "normal": "normal",
+            "italic": "italic",
+            "oblique": "oblique"
+        },
+        "decorations": {
+            "ol": "overline",
+            "lt": "line-through",
+            "ul": "underline",
+            "ol-ul": "underline overline"
+        },
+        "weights": {
+            "1": 100,
+            "2": 200,
+            "3": 300,
+            "4": 400,
+            "5": 500,
+            "6": 600,
+            "7": 700,
+            "8": 800
+        },
+        "families": {
+            "lato": "'Lato', sans-serif"
+        },
+        "sizes": {
+            "1": "16px",
+            "2": "18px",
+            "3": "20px",
+            "4": "24px",
+            "5": "28px",
+            "6": "36px"
+        }
+    },
+    "break-points": {
+        "-xl" : { 
+            "media": "max-width:1440px",
+            "size": 1440
+        },
+        "-lg" : { 
+            "media": "max-width:1240px",
+            "size": 1240
+        },
+        "-md" : { 
+            "media": "max-width:1040px",
+            "size": 1040
+        },
+        "-sm" : { 
+            "media": "max-width:768px",
+            "size": 768
+        },
+        "-xs" : { 
+            "media": "max-width:540px",
+            "size": 540
+        },
+        "-xxs" : { 
+            "media": "max-width:320px",
+            "size": 320
+        }
+    }
+}
