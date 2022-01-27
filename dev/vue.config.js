@@ -13,8 +13,10 @@ module.exports = {
     msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
+    id: "/",
+    start_url: "/",
     workboxOptions: {
-      swSrc: `src/service-worker.js`
+      swSrc: `src/service-worker.js`,
     },
     workboxPluginMode: "InjectManifest",
   },
