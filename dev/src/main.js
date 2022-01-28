@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './registerServiceWorker'
-
+import '@/service-worker/register'
 createApp(App).mount('#app')
